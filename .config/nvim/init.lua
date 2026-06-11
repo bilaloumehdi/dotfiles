@@ -1,5 +1,6 @@
 require 'core.options'
 require 'core.keymaps'
+require 'core.snippets';
 
 -- ============================================================
 -- PLUGIN MANAGER
@@ -67,6 +68,8 @@ do
   })
 end
 
+
+--TODO: move this to snippets
 ---Because most plugins are hosted on GitHub, you can use the helper
 ---function to have less repetition in the following sections.
 ---@param repo string
@@ -79,3 +82,5 @@ require 'plugins.colortheme'
 require 'plugins.lualine'
 require 'plugins.treesitter'
 require 'plugins.telescope'
+require 'plugins.lsp'
+require 'plugins.autocompletion'
