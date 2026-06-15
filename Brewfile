@@ -1,0 +1,15 @@
+tap "mvndaemon/homebrew-mvnd"
+
+brew "colima"
+brew "docker"
+brew "jenv"
+brew "maven"
+brew "mvnd"
+brew "powerlevel10k"
+brew "neovim"
+brew "tree-sitter-cli"
+brew "tmux"
+brew "stow"
+
+cask "oracle-jdk@21"
+cask "ghostty"
