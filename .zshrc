@@ -118,5 +118,13 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
-export SQLPATH="/Users/bilaloumehdi/util/sqlscripts"
-source ~/util/startup/aliases
+export SQLPATH="$HOME/util/sqlscripts"
+
+# define a location for zsh scripts to source such as aliases
+ZSH_SCRIPTS_DIR="$HOME/.config/zsh"
+
+if [[ -d "$ZSH_SCRIPTS_DIR" ]]; then
+  for file in "$ZSH_SCRIPTS_DIR"/*.zsh; do
+    [[ -f "$file" ]] && source "$file"
+  done
+fi
