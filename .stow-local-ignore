@@ -1,0 +1,6 @@
+# Run stow -nv . to verify the following list is ignored from symlinks 
+^.git$
+^.gitignore$
+^bootstrap$
+^LICENSE$
+

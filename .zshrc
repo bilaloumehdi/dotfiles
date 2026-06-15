@@ -114,9 +114,6 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Jenv setup
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
 
 export SQLPATH="$HOME/util/sqlscripts"
 
@@ -128,3 +125,8 @@ if [[ -d "$ZSH_SCRIPTS_DIR" ]]; then
     [[ -f "$file" ]] && source "$file"
   done
 fi
+
+# Jenv setup
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
