@@ -39,6 +39,9 @@ alias gsh='git stash'
 alias gsp='git stash pop'
 alias grs='git restore'
 alias grss='git restore --staged'
+alias gwa='git worktree add'
+alias gwl='git worktree list'
+alias gwp='git worktree prune'
 
 ########################################
 #  BUILD
